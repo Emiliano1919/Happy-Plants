@@ -1,0 +1,9 @@
+node_modules
+package-lock.json
+build
+.DS_Store
+CVS
+Thumbs.db
+webpack.config.js
+#ignore the node_modules directory
+/node_modules
