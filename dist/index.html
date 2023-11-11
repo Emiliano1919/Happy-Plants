@@ -9,16 +9,20 @@
   <body>
     <div class="main">
       <div class="content">
-        <div class="carousel">
-          <button class="carousel-button prev">&#8656;</button>
-          <buttonn class="carousel-button next">&#8658;</button>
-          <ul>
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+          <ul data-slides>
             <li class="slide" data-active>
               <img src="/src/IMG_7179.jpg" alt="Image of a room">
             </li>
-            <li class="slide"></li>
-            <li class="slide"></li>
+            <li class="slide">
+              <img src="/src/IMG_7188.jpg" alt="Image of a living room">
+            </li>
+            <li class="slide">
+              <img src="/src/IMG_7978.jpg" alt="Image of a plant">
+            </li>
           </ul>
+          <buttonn class="carousel-button next" data-carousel-button="next">&#8658;</button>
         </div>
       </div>
       <div class="weather">

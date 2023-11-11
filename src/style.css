@@ -62,9 +62,9 @@ table {
 }
 
 .carousel{
-    grid-column: 2/3;
     position: relative;
-    min-height: 100dvh;
+    height: 100dvh;
+    width: 100%;
 }
 
 .slide{
@@ -78,8 +78,10 @@ table {
 }
 
 .slide > img{
+    display: block;
     max-width: 100%;
     max-height: 60%;
+    object-position: center;
 }
 
 .carousel-button{
@@ -88,7 +90,6 @@ table {
     border: none;
     font-size: 4rem;
     top:50%;
-    left: 10%;
     z-index: 2;
     transform: translateY(-50%);
     color: whitesmoke;
@@ -99,6 +100,15 @@ table {
 .carousel-button:hover,
 .carousel-button:focus{
     color: white;
+}
+
+.carousel-button.prev{
+    min-height: 1rem;
+    left: 1rem;
+}
+.carousel-button.next{
+    min-height: 2rem;
+    right: 1rem;
 }
 
 .slide[data-active]{
